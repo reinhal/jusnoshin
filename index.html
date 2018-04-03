@@ -22,19 +22,55 @@
 						<header>
 							<h1>JusNoshin</h1>
 						</header>
-						<p>A great meal here... Change this later!</p>
+						<p>Search meals for home or for restaurants.</p>
 						<form action="" method="post" id="intro-form">
 							<div class="container-fluid">
 								<div class="row">
-									<div class="col-md-12 col-sm-12">
+									<div class="col-md-6 col-sm-12">
 										<div class="form-group">
-											<label for="diet-pref">Diet Preferences</label>
-											<select name="diet-pref[]" id="diet-pref" class="form-control" multiple="multiple" data-placeholder="Diet Preferences">
+											<label for="diet-req">Diet Requirements</label>
+											<select name="diet-req[]" id="diet-req" class="form-control" multiple="multiple" data-placeholder="Diet Requirements">
 												<option value="Vegan">Vegan</option>
 												<option value="Vegetarian">Vegetarian</option>
-												<option value="Ovo-Vegetarian">Ovo-Vegetarian</option>
-												<option value="Non-Vegetarian">Non-Vegetarian</option>
-												<option value="Gluten Free">Gluten Free</option>
+												<option value="Pescatarian">Pescatarian</option>
+												<option value="High Protein">High Protein</option>
+												<option value="Low Sodium">Low Sodium</option>
+												<option value="Low Carb">Low Carb</option>
+												<option value="Paleo">Paleo</option>
+												<option value="Primal">Primal</option>
+												<option value="Ketogenic">Ketogenic</option>
+												<option value="FODMAP">FODMAP</option>
+												<option value="Whole 30">Whole 30</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group">
+											<label for="diet-cui">Cuisine</label>
+											<select name="diet-cui[]" id="diet-cui" class="form-control" multiple="multiple" data-placeholder="Cuisine">
+												<option value="African">African</option>
+												<option value="American">American</option>
+												<option value="British">British</option>
+												<option value="Cajun">Cajun</option>
+												<option value="Carribean">Carribean</option>
+												<option value="Chinese">Chinese</option>
+												<option value="Eastern European">Eastern European</option>
+												<option value="French">French</option>
+												<option value="German">German</option>
+												<option value="Greek">Greek</option>
+												<option value="Indian">Indian</option>
+												<option value="Irish">Irish</option>
+												<option value="Italian">Italian</option>
+												<option value="Japanese">Japanese</option>
+												<option value="Jewish">Jewish</option>
+												<option value="Korean">Korean</option>
+												<option value="Latin American">Latin American</option>
+												<option value="Mexican">Mexican</option>
+												<option value="Middle Eastern">Middle Eastern</option>
+												<option value="Nordic">Nordic</option>
+												<option value="Southern">Southern</option>
+												<option value="Spanish">Spanish</option>
+												<option value="Thai">Vietnamese</option>
 											</select>
 										</div>
 									</div>
@@ -42,14 +78,27 @@
 								<div class="row">
 									<div class="col-md-6 col-sm-12">
 										<div class="form-group">
-											<label for="incl-ing">Include Ingredients</label>
-											<select name="incl-ing[]" id="incl-ing" class="form-control lisa-select2-tags" data-placeholder="Include Ingredients" multiple="multiple"></select>
+											<label for="incl-ing">Desired Ingredients</label>
+											<select name="incl-ing[]" id="incl-ing" class="form-control lisa-select2-tags" data-placeholder="Desired Ingredients" multiple="multiple"></select>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-12">
 										<div class="form-group">
-											<label for="excl-ing">Exclude Ingredients</label>
-											<select name="excl-ing[]" id="excl-ing" class="form-control lisa-select2-tags" data-placeholder="Exclude Ingredients" multiple="multiple"></select>
+											<label for="excl-ing">Intolerances/allergies</label>
+											<select name="excl-ing[]" id="excl-ing" class="form-control lisa-select2-tags" data-placeholder="Intolerances/allergies" multiple="multiple">
+												<option value="Dairy Free">Dairy Free</option>
+												<option value="Egg Free">Egg Free</option>
+												<option value="Gluten Free">Gluten Free</option>
+												<option value="Grain Free">Grain Free</option>
+												<option value="Peanut Free">Peanut Free</option>
+												<option value="Seafood Free">Seafood Free</option>
+												<option value="Sesame Free">Sesame Free</option>
+												<option value="Shellfish Free">Shellfish Free</option>
+												<option value="Soy Free">Soy Free</option>
+												<option value="Sulfite Free">Sulfite Free</option>
+												<option value="Tree Nut Free">Tree Nut Free</option>
+												<option value="Wheat Free">Wheat Free</option>
+											</select>
 										</div>
 									</div>
 								</div>
