@@ -1,0 +1,5 @@
+body {font-family: 'Open Sans'; background-color: #f96;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-family: 'Montserrat'; font-weight: normal;}
+
+#intro header {margin-top: 150px;}
+#intro form label {display: none;}

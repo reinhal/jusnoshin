@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>JusNoshin</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,600" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body class="intro-page">
+		<section id="intro">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-md-offset-4 text-center">
+						<header>
+							<h1>JusNoshin</h1>
+						</header>
+						<p>A great meal here... Change this later!</p>
+						<form action="" method="post" id="intro-form">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12 col-sm-12">
+										<div class="form-group">
+											<label for="diet-pref">Diet Preferences</label>
+											<select name="diet-pref[]" id="diet-pref" class="form-control" multiple="multiple" data-placeholder="Diet Preferences">
+												<option value="Vegan">Vegan</option>
+												<option value="Vegetarian">Vegetarian</option>
+												<option value="Ovo-Vegetarian">Ovo-Vegetarian</option>
+												<option value="Non-Vegetarian">Non-Vegetarian</option>
+												<option value="Gluten Free">Gluten Free</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group">
+											<label for="incl-ing">Include Ingredients</label>
+											<select name="incl-ing[]" id="incl-ing" class="form-control lisa-select2-tags" data-placeholder="Include Ingredients" multiple="multiple"></select>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<div class="form-group">
+											<label for="excl-ing">Exclude Ingredients</label>
+											<select name="excl-ing[]" id="excl-ing" class="form-control lisa-select2-tags" data-placeholder="Exclude Ingredients" multiple="multiple"></select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<input type="submit" value="Eat In" class="btn btn-primary input-lg" />
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<input type="submit" value="Eat Out" class="btn btn-primary input-lg" />
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
