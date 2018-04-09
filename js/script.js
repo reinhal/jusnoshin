@@ -1,5 +1,5 @@
 $(function () {
-	$("#diet-req, #diet-cui").select2({
+	$("#diet-req, #diet-cui" ).select2({
 		"width": "100%"
 	});
 	$(".lisa-select2-tags").select2({
@@ -25,8 +25,6 @@ $(function () {
 			"method": "GET",
 			"success": function (res) {
 				console.log(res);
-				// Display the top 6 recipes, make each recipe clickable
-				// recipe result page has wine pairing check-box and nearby venue check-box
 			},
 			"crossDomain": true
 		});
