@@ -1,5 +1,5 @@
 $(function () {
-	$("#diet-req, #diet-cui").select2({
+	$("#diet-req, #diet-cui, #incl-ing, #excl-ing").select2({
 		"width": "100%"
 	});
 	$(".lisa-select2-tags").select2({
@@ -24,7 +24,7 @@ $(function () {
 			},
 			"method": "GET",
 			"success": function (res) {
-data = {
+				data = {
   "results": [
   {
 			"id": 487522,
@@ -81,7 +81,7 @@ data = {
 	"number": 6,
   "totalResults": 103,
 	"processingTimeMs": 188
-}
+				}
 				$("#num").text(res.totalResults);
 				$("#term").text("You searched for " + dietReq + " options under " + cui + " that includes " + desIng + " and not " + intAll);
 				$("#resultsPerPage").text(res.number);
