@@ -38,3 +38,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .results li:hover {
   background-color: #B3EFFF;
 }
+.results figcaption a {
+  display: block;
+  height: 2.75em;
+  overflow: hidden;
+}
+#intro.no-intro header {
+  margin-top: 50px;
+}
