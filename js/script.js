@@ -1,5 +1,5 @@
 $(function () {
-	$("#diet-req, #diet-cui, #incl-ing, #excl-ing").select2({
+	$("#diet-req, #diet-cui").select2({
 		"width": "100%"
 	});
 	$(".lisa-select2-tags").select2({
@@ -98,4 +98,23 @@ $(function () {
 			"crossDomain": true
 		});
 	});
+	$("img").click(function (e) {
+		e.preventDefault();
+		var recId = ress[i].id;  //id.results  this is the variable for the id of the recipe the user clicks
+		$.ajax({
+			"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/" + recId + "/information",
+			"headers": {
+				"X-Mashape-Key": "APHt8X9YagmshN6vXr6VkafMcAy1p1sIjtzjsndjj2LopWsrpl",
+				"X-Mashape-Host": "spoonacular-recipe-food-nutrition-v1.p.mashape.com"
+			},
+			"method": "GET",
+			"success": function (res) {
+						console.log(res);
+			}
+		});
+	});
 });
+
+
+			//$("#resRec").prop("hidden", true);
+		  //$("#recView").prop("hidden", false);
