@@ -18,15 +18,15 @@
 		<section id="intro">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-4 col-sm-12 col-md-offset-4 text-center">
+					<div class="col-md-12 col-sm-12 text-center">
 						<header>
-							<h1>JusNoshin</h1>
+							<h1>On The Table</h1>
 						</header>
-						<p>Search meals for home or for restaurants.</p>
+						<p>Tell us what you want to eat and what you can't.<br>We will offer you some recipe options with wine recommendations<br>and nearby venues for after dinner.<br>Enjoy!</p>
 						<form action="" method="post" id="intro-form">
 							<div class="container-fluid">
 								<div class="row">
-									<div class="col-md-6 col-sm-12">
+									<div class="col-md-6 col-sm-12 col-md-offset-3 text-center">
 										<div class="form-group">
 											<label for="diet-req">Diet Requirements</label>
 											<select name="diet-req[]" id="diet-req" class="form-control" multiple="multiple" data-placeholder="Diet Requirements">
@@ -40,7 +40,7 @@
 											</select>
 										</div>
 									</div>
-									<div class="col-md-6 col-sm-12">
+									<div class="col-md-6 col-sm-12 col-md-offset-3 text-center">
 										<div class="form-group">
 											<label for="diet-cui">Cuisine</label>
 											<select name="diet-cui[]" id="diet-cui" class="form-control" multiple="multiple" data-placeholder="Cuisine">
@@ -71,18 +71,10 @@
 											</select>
 										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6 col-sm-12">
+									<div class="col-md-6 col-sm-12 col-md-offset-3 text-center">
 										<div class="form-group">
-											<label for="incl-ing">Desired Ingredients</label>
-											<select name="incl-ing[]" id="incl-ing" class="form-control lisa-select2-tags" data-placeholder="Desired Ingredients" multiple="multiple"></select>
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-12">
-										<div class="form-group">
-											<label for="excl-ing">Intolerances/allergies</label>
-											<select name="excl-ing[]" id="excl-ing" class="form-control lisa-select2-tags" data-placeholder="Intolerances/allergies" multiple="multiple">
+											<label for="excl-ing">Intolerances/Allergies</label>
+											<select name="excl-ing[]" id="excl-ing" class="form-control lisa-select2-tags" data-placeholder="Intolerances/Allergies" multiple="multiple">
 												<option value="dairy">Dairy Free</option>
 												<option value="egg">Egg Free</option>
 												<option value="gluten">Gluten Free</option>
@@ -98,12 +90,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="row">
-									<div class="col-md-6 col-sm-6 col-xs-6">
-										<input type="submit" value="Eat In" class="btn btn-primary input-lg" id="eatIn" />
-									</div>
-									<div class="col-md-6 col-sm-6 col-xs-6">
-										<input type="submit" value="Eat Out" class="btn btn-primary input-lg" id="eatOut" />
+								<div class="row button">
+									<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+										<input type="submit" value="What is on the table?" class="btn btn-primary input-lg center-block" id="eatIn" />
 									</div>
 								</div>
 							</div>
@@ -115,19 +104,11 @@
 		<section id="resRec" hidden>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-4 col-sm-12 col-md-offset-4 text-center">
+					<div class="col-md-6 col-sm-12 col-md-offset-3 text-center">
 						<h2>Recipe Results</h2>
 						<p>Here are your <span id='num'>so many</span> recipe options for dinner tonight: <span id='term'></span>.  Displaying only the first <span id='resultsPerPage'>so many </span> results.</p>
 						<ul class="results">
 						</ul>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xs-6">
-								<input type="submit" value="Wine Pairings" class="btn btn-primary input-lg" id="winePairing" />
-							</div>
-							<div class="col-md-6 col-sm-6 col-xs-6">
-								<input type="submit" value="Nearby Venues" class="btn btn-primary input-lg" id="nearbyVenues" />
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -139,7 +120,7 @@
 						<h2>Recipe Selection</h2>
 						<p>Here is your recipe selection.</p>
 						<figure>
-							<img src="http://via.placeholder.com/200x150?text=Recipe+1" alt="" />
+							<img src="http://via.placeholder.com/400x300?text=Recipe+1" alt="" />
 							<figcaption><a href="">Recipe 1</a></figcaption>
 						</figure>
 					</div>

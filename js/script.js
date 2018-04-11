@@ -17,7 +17,7 @@ $(function () {
 		var intAll = $('#excl-ing').val();
 		$.ajax({
 			// Generate the URL from the input received.
-			"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/searchComplex?number=6&offset=0&diet=" + encodeURIComponent(dietReq) + "&cuisine=" + encodeURIComponent(cui) + "&includeIngredients=" + encodeURIComponent(desIng).toLowerCase() + "&intolerances=" + encodeURIComponent(intAll),
+			"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/searchComplex?number=6&offset=0&diet=" + encodeURIComponent(dietReq) + "&cuisine=" + encodeURIComponent(cui) + "&intolerances=" + encodeURIComponent(intAll),
 			"headers": {
 				"X-Mashape-Key": "APHt8X9YagmshN6vXr6VkafMcAy1p1sIjtzjsndjj2LopWsrpl",
 				"X-Mashape-Host": "spoonacular-recipe-food-nutrition-v1.p.mashape.com"
@@ -94,23 +94,23 @@ $(function () {
 				});
 				$("#intro").addClass("no-intro");
 				$("#resRec").prop("hidden", false);
+				$("li").click(function (e) {
+					e.preventDefault();
+					var recId = results.id;  //id.results  this is the variable for the id of the recipe the user clicks
+					$.ajax({
+						"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/487522/information",
+						"headers": {
+							"X-Mashape-Key": "APHt8X9YagmshN6vXr6VkafMcAy1p1sIjtzjsndjj2LopWsrpl",
+							"X-Mashape-Host": "spoonacular-recipe-food-nutrition-v1.p.mashape.com"
+						},
+						"method": "GET",
+						"success": function (res) {
+									console.log(res);
+						}
+				  });
+			 });
 			},
 			"crossDomain": true
-		});
-	});
-	$("img").click(function (e) {
-		e.preventDefault();
-		var recId = ress[i].id;  //id.results  this is the variable for the id of the recipe the user clicks
-		$.ajax({
-			"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/" + recId + "/information",
-			"headers": {
-				"X-Mashape-Key": "APHt8X9YagmshN6vXr6VkafMcAy1p1sIjtzjsndjj2LopWsrpl",
-				"X-Mashape-Host": "spoonacular-recipe-food-nutrition-v1.p.mashape.com"
-			},
-			"method": "GET",
-			"success": function (res) {
-						console.log(res);
-			}
 		});
 	});
 });

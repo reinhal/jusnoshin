@@ -1,8 +1,17 @@
 body {
 	font-family: 'Open Sans';
-	background-color: #f96;
+	background-image: url('https://image.ibb.co/maCTbc/knife_2879372_1920.jpg');
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1 {
+  font-family: 'Montserrat';
+  font-size: 48pt;
+}
+
+p {
+  font-size: 18pt;
+  font-weight: bold;
+}
+h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Montserrat';
 	font-weight: normal;
 }
@@ -15,7 +24,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .results {
   text-align: center;
 }
-
 .results li {
   width: 30%;
   display: inline-block;
@@ -23,7 +31,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   border-radius: 5px;
   padding: 5px;
 }
-
 .results li img {
   display: inline-block;
   max-width: 100%;
@@ -31,12 +38,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 5px;
 }
 .results a {
+  color: black;
+  font-size: 14pt;
+  font-weight: bold;
   text-decoration: none;
   display: block;
 }
-
 .results li:hover {
-  background-color: #B3EFFF;
+  background-color: #5a4;
 }
 .results figcaption a {
   display: block;
@@ -46,3 +55,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #intro.no-intro header {
   margin-top: 50px;
 }
+select {
+ font-size: 18pt;
+ background: transparent;
+ border: none;
+}
+
