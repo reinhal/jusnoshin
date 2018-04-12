@@ -2,14 +2,19 @@ body {
 	font-family: 'Open Sans';
 	background-image: url('https://image.ibb.co/maCTbc/knife_2879372_1920.jpg');
 }
+.intro-page body {
+  background-image: url('https://image.ibb.co/maCTbc/knife_2879372_1920.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 h1 {
   font-family: 'Montserrat';
   font-size: 48pt;
 }
-
 p {
   font-size: 18pt;
-  font-weight: bold;
 }
 h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Montserrat';
