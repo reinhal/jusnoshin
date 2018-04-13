@@ -39,7 +39,7 @@ $(function () {
 					e.preventDefault();
 					var recId = $(this).data("id");  //id.results  this is the variable for the id of the recipe the user clicks
 					$.ajax({
-						"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes" + recId + "/information",
+						"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/" + recId + "/information",
 						"headers": {
 							"X-Mashape-Key": "APHt8X9YagmshN6vXr6VkafMcAy1p1sIjtzjsndjj2LopWsrpl",
 							"X-Mashape-Host": "spoonacular-recipe-food-nutrition-v1.p.mashape.com"
@@ -47,9 +47,10 @@ $(function () {
 						"method": "GET",
 						"success": function (rs) {
 							$(".recipe").append(function () {
-								var reci = ""
+								var reci = rs.recipe;
 								var recipeHTML = "";
-								recipeHTML = '<li>`https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes" + recId + "/information`</li>';
+								for ( var j = 0; j < reci.length; j++)
+									recipeHTML += '<li><figure><img src="' + reci[j].image + '" alt="' + reci[j].title + '" /><figcaption><a href="' + reci[j].sourceUrl + '">' + ress[i].title + '</a></figcaption></figure></li>';
 								return recipeHTML;
 							});
 							$.ajax({
