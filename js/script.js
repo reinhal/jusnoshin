@@ -47,12 +47,13 @@ $(function () {
 						"method": "GET",
 						"success": function (rs) {
 							$(".recipe").append(function () {
-								var reci = rs.recipe;
-								var recipeHTML = "";
-								for ( var j = 0; j < reci.length; j++)
-									recipeHTML += '<li><figure><img src="' + reci[j].image + '" alt="' + reci[j].title + '" /><figcaption><a href="' + reci[j].sourceUrl + '">' + ress[i].title + '</a></figcaption></figure></li>';
+								var reci = rs;
+								console.log(rs);
+								var recipeHTML = '<figure><img src="' + reci.image + '" alt="' + reci.title + '" /><figcaption><a href="' + reci.sourceUrl + '">' + reci.title + '</a></figcaption></figure>';
 								return recipeHTML;
 							});
+							$("#resRec").prop("hidden", true);
+							$("#recView").prop("hidden", false);
 							$.ajax({
 								"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/wine/pairing?food=" + cui,
 								"headers": {
@@ -61,15 +62,18 @@ $(function () {
 								},
 								"method": "GET",
 								"success": function (r) {
-									console.log("pairing-info");
-									console.log(r);
+									$(".wine").append(function () {
+										var wine = r;
+										console.log(r);
+										var wineHTML = '<figure><img src="' + wine.productMatches[0].imageUrl + '" alt="' + wine.productMatches[0].title + '" /><figcaption><a href="' + wine.productMatches[0].link + '">' + wine.productMatches[0].description + '</a></figcaption></figure>';
+										return wineHTML;
+									});
 								}
-						  });
-						}
-				  });
-			 	});
-			},
-			"crossDomain": true
+							});
+			 			}
+					});
+				});
+			}
 		});
 	});
 });
