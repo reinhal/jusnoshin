@@ -22,9 +22,6 @@ h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Montserrat';
 	font-weight: normal;
 }
-figure {
-  border-radius: 5px;
-}
 .enj {
   font-size: 24pt;
 }
@@ -34,8 +31,12 @@ figure {
 #intro form label {
 	display: none;
 }
-.results {
+.results .recipe .wine {
   text-align: center;
+}
+.recipe .wine {
+  display: inline-block;
+  padding: 5px;
 }
 .results li {
   width: 30%;
@@ -50,8 +51,16 @@ figure {
   border-radius: 5px;
   padding: 5px;
 }
-.results a {
-  color: black;
+.recipe img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px;
+  clear: right;
+}
+.results .recipe .wine a {
+  color: #333;
   font-size: 14pt;
   font-weight: bold;
   text-decoration: none;
@@ -70,26 +79,21 @@ figure {
 .btn:focus {
   background-color: #333;
 }
-.results figcaption a {
+figcaption a {
   display: block;
   height: 2.75em;
   overflow: hidden;
   text-shadow: 0 0 2px #fff;
+  color: #333;
+  font-size: 14pt;
+  font-weight: bold;
 }
 #intro.no-intro header {
   margin-top: 50px;
 }
-select {
- font-size: 18pt;
- background: transparent;
- border: none;
-}
-figcaption a {
-  font-size: 18pt;
-  color: #333;
-  font-weight: bold;
-}
 figcaption a:hover {
-  font-size: 20pt;
   color: #2c5624;
+}
+#recView {
+  margin: 0 auto;
 }
