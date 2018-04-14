@@ -6,7 +6,7 @@ $(function () {
 		"width": "100%",
 		"tags": true
 	});
-	// Eat In
+	// Get meal ideas
 	$("#eatIn").click(function (e) {
 		// Prevent the default event of submitting the form.
 		e.preventDefault();
@@ -23,9 +23,6 @@ $(function () {
 			},
 			"method": "GET",
 			"success": function (res) {
-				//$("#num").text(res.totalResults);
-				//$("#term").text("You searched for " + dietReq + " options under " + cui + " that includes " + desIng + " and not " + intAll);
-				//$("#resultsPerPage").text(res.number);
 				$(".results").append(function () {
 					var optionsHTML = "";
 					var ress = res.results;
@@ -33,7 +30,11 @@ $(function () {
 						optionsHTML += '<li data-id="' + ress[i].id + '"><figure><img src="' + ress[i].image + '" alt="' + ress[i].title + '" /><figcaption><a href="">' + ress[i].title + '</a></figcaption></figure></li>';
 					return optionsHTML;
 				});
+				$("#moreIdeas").click(function () {
+					location.reload();
+				});
 				$("#intro").addClass("no-intro");
+				$("#eatIn").addClass("hidden");
 				$("#resRec").prop("hidden", false);
 				$(".results li").click(function (e) {
 					e.preventDefault();
@@ -69,6 +70,9 @@ $(function () {
 										return wineHTML;
 									});
 								}
+							});
+							$("#startOver").click(function () {
+							location.reload();
 							});
 			 			}
 					});
