@@ -2,6 +2,7 @@ body {
 	font-family: 'Open Sans';
 	background-image: url('https://image.ibb.co/maCTbc/knife_2879372_1920.jpg');
   background-attachment: fixed;
+  padding: 15px;
 }
 .intro-page body {
   background-image: url('https://image.ibb.co/maCTbc/knife_2879372_1920.jpg');
@@ -104,4 +105,12 @@ figcaption a:hover {
 }
 #recView {
   margin: 0 auto;
+}
+@media screen and (max-width: 500px) {
+  h2, p {
+    font-size: 14pt;
+  }
+  figcaption a {
+    font-size: 12pt;
+  }
 }
