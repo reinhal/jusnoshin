@@ -8,7 +8,7 @@ A live version of the application can be found at: https://reinhal.github.io/jus
 
 **Current live version:** 1.0
 
-![JNHome](/Users/lisa/Desktop/Projects/JusNoshin/JNHome.png)
+![JNHome](/Users/lisa/Desktop/JNHome.png)
 
 ## Requirements
 
