@@ -8,8 +8,7 @@ A live version of the application can be found at: https://reinhal.github.io/jus
 
 **Current live version:** 1.0
 
-jusnoshin/JNHome.png
-
+![image](https://github.com/reinhal/jusnoshin/blob/master/JNHome.png)
 
 ## Requirements
 
@@ -27,7 +26,7 @@ Then click "What's on the table?" button.
 
 Select one of the six displayed options by clicking.
 
-jusnoshin/JN2.png
+![image](https://github.com/reinhal/jusnoshin/blob/master/JN2.png)
 
 User may start over at any time by clicking the button.
 
