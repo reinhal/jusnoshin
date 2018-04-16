@@ -36,6 +36,9 @@ h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #intro form label {
 	display: none;
 }
+#diet-req {
+  background-color: transparent;
+}
 .results .recipe .wine {
   text-align: center;
 }
@@ -75,7 +78,9 @@ ul {
   display: block;
 }
 .results li:hover {
-  background-color: #5a4;
+  background-color: #fff;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px #333;
 }
 .btn {
   background-color: #333;
@@ -84,6 +89,7 @@ ul {
 }
 .btn:hover {
   background-color: #5a4;
+  box-shadow: 5px 5px 5px #333;
 }
 .btn:focus {
   background-color: #333;
@@ -101,10 +107,42 @@ figcaption a {
   margin-top: 50px;
 }
 figcaption a:hover {
-  color: #2c5624;
+  color: #5a4;
 }
-#recView {
-  margin: 0 auto;
+#recView figure {
+  padding: 15px;
+}
+#recView figure:hover {
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #333;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.select2 {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: hsla(360, 100%, 100%, 0);
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-color: black;
+}
+.select2-search__field {
+  background-color: transparent;
+  color: black;
+  font-family: 'Montserrat';
+}
+.select2-search__field::-webkit-input-placeholder {
+  color: black;
+  background-color: hsla(360, 100%, 100%, 0);
+  font-family: 'Montserrat';
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: black;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  font-size: 14pt;
+  font-weight: bold;
 }
 @media screen and (max-width: 500px) {
   h2, p {
