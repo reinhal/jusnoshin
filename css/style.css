@@ -131,6 +131,11 @@ figcaption a:hover {
   background-color: transparent;
   color: black;
   font-family: 'Montserrat';
+  font-weight: bold;
+}
+.select2-dropdown {
+  font-family: 'Montserrat';
+  font-weight: bold;
 }
 .select2-search__field::-webkit-input-placeholder {
   color: black;

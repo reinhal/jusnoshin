@@ -62,16 +62,16 @@ $(function () {
 									"X-Mashape-Host": "spoonacular-recipe-food-nutrition-v1.p.mashape.com"
 								},
 								"method": "GET",
-								"success": function (r) {
+								"success": function (wine) {
 									$(".wine").append(function () {
-										var wine = r;
-										//if (wine == undefined) {
-											//var defaultWineHTML = '<figure><img src="https://spoonacular.com/productImages/442371-312x231.jpg" alt="Chehalem INOX Chardonnay" /><figcaption><a href="https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fchehalem-inox-chardonnay-2009%2F109305">'"INOX® takes its name from the abbreviation of the French word for stainless steel, inoxydable. The wine was created differently from most Chardonnay you've had. We think we've succeeded in expressing the crisp, steely, and fruit-rich side that we love about some Old-World Chardonnays. What makes this possible is the use of exclusively Dijon clones, exceptionally well suited to Oregon's cool climate and exhibiting a richness that does not depend on oak. INOX screams of the hallmarks of a cool climate-brightness, pinpoint fruit, and explosive aromas and flavors. We intend INOX for a full range of use, from hot weather chilling to elegant dinner complements.Quintessential INOX, with lovely white aromas of gardenia and other flowers, peach, apricot, pear, pineapple, and green apple candy showing on the nose and palate; it shows a great balance with relatively low alcohol for the year and bright acid; the length is lovely and the weight rich, with a supple, silky texture; flavors linger, with cherry and peach accents. Very pleased."'</a></figcaption></figure>';
-											//return wineHTML;
-										//} else {
+										console.log(wine);
+										if (wine.productMatches.length == 0) {
+											var defaultWineHTML = '<figure><img src="https://spoonacular.com/productImages/442371-312x231.jpg" alt="Chehalem INOX Chardonnay" /><figcaption><a href="https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fchehalem-inox-chardonnay-2009%2F109305">\'"INOX® takes its name from the abbreviation of the French word for stainless steel, inoxydable. The wine was created differently from most Chardonnay you\'ve had. We think we\'ve succeeded in expressing the crisp, steely, and fruit-rich side that we love about some Old-World Chardonnays. What makes this possible is the use of exclusively Dijon clones, exceptionally well suited to Oregon\'s cool climate and exhibiting a richness that does not depend on oak. INOX screams of the hallmarks of a cool climate-brightness, pinpoint fruit, and explosive aromas and flavors. We intend INOX for a full range of use, from hot weather chilling to elegant dinner complements.Quintessential INOX, with lovely white aromas of gardenia and other flowers, peach, apricot, pear, pineapple, and green apple candy showing on the nose and palate; it shows a great balance with relatively low alcohol for the year and bright acid; the length is lovely and the weight rich, with a supple, silky texture; flavors linger, with cherry and peach accents. Very pleased."\'</a></figcaption></figure>';
+											return defaultWineHTML;
+										} else {
 										var wineHTML = '<figure><img src="' + wine.productMatches[0].imageUrl + '" alt="' + wine.productMatches[0].title + '" /><figcaption><a href="' + wine.productMatches[0].link + '">' + wine.productMatches[0].description + '</a></figcaption></figure>';
 										return wineHTML;
-										//}
+										}
 									});
 								}
 							});

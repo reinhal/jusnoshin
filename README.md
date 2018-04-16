@@ -8,7 +8,7 @@ A live version of the application can be found at: https://reinhal.github.io/jus
 
 **Current live version:** 1.0
 
-![JusNoshinHome](/Users/lisa/Desktop/Projects/JusNoshin/JusNoshinHome.png)
+![JNHome](/Users/lisa/Desktop/Projects/JusNoshin/JNHome.png)
 
 ## Requirements
 
@@ -22,22 +22,22 @@ Input your diet requirements, cuisine, and intolerances/allergies.
 
 Then click "What's on the table?" button.
 
-![JusNoshin1](/Users/lisa/Desktop/Projects/JusNoshin/JusNoshin1.png)
-
-
+![JN1](/Users/lisa/Desktop/Projects/JusNoshin/JN1.png)
 
 Select one of the six displayed options by clicking.
 
-![JusNoshin2](/Users/lisa/Desktop/Projects/JusNoshin/JusNoshin2.png)
-
-
+![JN2](/Users/lisa/Desktop/JN2.png)
 
 User may start over at any time by clicking the button.
 
-## Planned Features
+## Planned Development
 
+- Add the following choices in the initial input fields: 
+  - Diet Requirements: **Any/None**
+  - Cuisine: **Any**
+  - Intolerances/Allergies: **None**
 - Allow the user to scroll through all the recipe results.
-- Display the complete recipe selected.
+- Display the complete recipe selected, including ingredients and preparation instructions.
 - Give users the options to search for either recipes or nearby restaurants.
 - Give users the ability to scroll through all the wine results.
 - Based on current location, display nearby venues.
