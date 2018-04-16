@@ -8,8 +8,8 @@ A live version of the application can be found at: https://reinhal.github.io/jus
 
 **Current live version:** 1.0
 
-![JNHome](/Users/lisa/Desktop/Projects/JusNoshin/JNHome.png)
 
+jusnoshin/JNHome.png
 
 
 ## Requirements
@@ -24,11 +24,11 @@ Input your diet requirements, cuisine, and intolerances/allergies.
 
 Then click "What's on the table?" button.
 
-![JN1](/Users/lisa/Desktop/Projects/JusNoshin/JN1.png)
+jusnoshin/JN1.png
 
 Select one of the six displayed options by clicking.
 
-![JN2](/Users/lisa/Desktop/JN2.png)
+jusnoshin/JN2.png
 
 User may start over at any time by clicking the button.
 
