@@ -50,6 +50,7 @@ ul {
   padding: 0;
 }
 .results li {
+  cursor: pointer;
   width: 30%;
   display: inline-block;
   margin: 0.25%;

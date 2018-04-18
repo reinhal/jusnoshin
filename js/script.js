@@ -7,32 +7,35 @@ $(function () {
 		"tags": true
 	});
 	// Get meal ideas
-	$("#eatIn").click(function (e) {
+	var offset = 0;
+	$("#eatIn, #eatInAgain, #moreIdeas").click(function (e) {
 		// Prevent the default event of submitting the form.
 		e.preventDefault();
+		if ( this.id == 'moreIdeas') 
+			offset += 6;
 		// Send a GET Request and fetch JSON.
 		var dietReq = $('#diet-req').val();
 		var cui = $('#diet-cui').val();
 		var intAll = $('#excl-ing').val();
 		$.ajax({
 			// Generate the URL from the input received.
-			"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/searchComplex?number=6&offset=0&diet=" + encodeURIComponent(dietReq) + "&cuisine=" + encodeURIComponent(cui) + "&intolerances=" + encodeURIComponent(intAll),
+			"url": "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/searchComplex?number=6&offset=" + offset + "&diet=" + encodeURIComponent(dietReq) + "&cuisine=" + encodeURIComponent(cui) + "&intolerances=" + encodeURIComponent(intAll),
 			"headers": {
 				"X-Mashape-Key": "APHt8X9YagmshN6vXr6VkafMcAy1p1sIjtzjsndjj2LopWsrpl",
 				"X-Mashape-Host": "spoonacular-recipe-food-nutrition-v1.p.mashape.com"
 			},
 			"method": "GET",
 			"success": function (res) {
-				$(".results").append(function () { // display data retrieved from URL.  Six recipes. 
+				$(".results").empty().append(function () { // display data retrieved from URL.  Six recipes. 
 					var optionsHTML = "";
 					var ress = res.results;
 					for (var i = 0; i < ress.length; i++)
 						optionsHTML += '<li data-id="' + ress[i].id + '"><figure><img src="' + ress[i].image + '" alt="' + ress[i].title + '" /><figcaption><a href="">' + ress[i].title + '</a></figcaption></figure></li>';
 					return optionsHTML;
 				});
-				$("#moreIdeas").click(function () {  //allows user to start the search over
-					location.reload();
-				});
+				//$("#moreIdeas").click(function () {  //allows user to start the search over
+					//location.reload();
+				//});
 				$("#intro").addClass("no-intro");
 				$("#eatIn").addClass("hidden");
 				$("#resRec").prop("hidden", false);
