@@ -23,14 +23,14 @@
 							<h1>JusNoshin</h1>
 						</header>
 						<h2>Tell us what you want to eat and what you can't.</h2>
-						<p>We will offer you some recipe options and a wine recommendation.<br><span class = "enj">Enjoy!</span></p>
+						<p>We will offer you receipe options, choose one and get a wine recommendation.<br><span class = "enj">Enjoy!</span></p>
 						<form action="" method="post" id="intro-form">
 							<div class="container-fluid">
 								<div class="row">
 									<div class="col-md-6 col-sm-12 col-md-offset-3 text-center">
 										<div class="form-group">
 											<label for="diet-req">Diet Requirements</label>
-											<select name="diet-req[]" id="diet-req" class="form-control" multiple="multiple" data-placeholder="Diet Requirements (required)">
+											<select name="diet-req[]" id="diet-req" class="form-control" multiple="multiple" data-placeholder="Diet Requirements (required)" aria-controls="Diet Requirements">
 												<option value="pescetarian">Pescatarian</option>
 												<option value="lacto vegetarian">Lacto Vegetarian</option>
 												<option value="ovo vegetarian">Ovo Vegetarian</option>
@@ -44,7 +44,7 @@
 									<div class="col-md-6 col-sm-12 col-md-offset-3 text-center">
 										<div class="form-group">
 											<label for="diet-cui">Cuisine</label>
-											<select name="diet-cui[]" id="diet-cui" class="form-control" multiple="multiple" data-placeholder="Cuisine (required)">
+											<select name="diet-cui[]" id="diet-cui" class="form-control" multiple="multiple" data-placeholder="Cuisine (required)" aria-controls="Cuisine">
 												<option value="african">African</option>
 												<option value="chinese">Chinese</option>
 												<option value="japanese">Japanese</option>
@@ -75,7 +75,7 @@
 									<div class="col-md-6 col-sm-12 col-md-offset-3 text-center">
 										<div class="form-group">
 											<label for="excl-ing">Intolerances/Allergies</label>
-											<select name="excl-ing[]" id="excl-ing" class="form-control lisa-select2-tags" data-placeholder="Intolerances/Allergies (required)" multiple="multiple">
+											<select name="excl-ing[]" id="excl-ing" class="form-control lisa-select2-tags" data-placeholder="Intolerances/Allergies (required)" multiple="multiple" aria-controls="Intolerances/Allergies">
 												<option value="dairy">Dairy Free</option>
 												<option value="egg">Egg Free</option>
 												<option value="gluten">Gluten Free</option>
@@ -102,7 +102,7 @@
 				</div>
 			</div>
 		</section>
-		<section role="region" id="resRec" hidden>
+		<section role="region" id="resRec" aria-live="polite" hidden>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-md-offset-3 text-center">
@@ -124,7 +124,7 @@
 				</div>
 			</div>
 		</section>
-		<section role="region" id="recView" hidden>
+		<section role="region" id="recView" aria-live="polite" hidden>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 col-sm-12 text-center">
