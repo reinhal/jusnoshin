@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**JusNoshin** is a web application to help you figure out *what* you want to eat and a *reccomendation* for wine will taste the best with your meal.
+**JusNoshin** is a web application to help you figure out *what* you want to eat and a *reccomendation* for wine that will taste the best with your meal.
 
 A live version of the application can be found at: https://reinhal.github.io/jusnoshin/
 
